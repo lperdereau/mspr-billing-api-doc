@@ -1,0 +1,35 @@
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+  - name: docker
+    image: banzaicloud/drone-kaniko
+    settings:
+      email: louis.epsi.perdereau@gmail.com
+      dockerfile: ./Dockerfile
+      registry: docker.pkg.github.com
+      repo: lperdereau/mspr-billing-api-doc/documentation
+      username:
+        from_secret: github_username
+      password:
+        from_secret: github_token
+      tags:
+        - ${DRONE_TAG}
+        - latest
+
+  - name: rollout
+    image: pabloclsn/kubectl-docker:latest
+    commands:
+      - echo $KUBE_CONFIG > ~/.kube/config
+      - kubectl rollout restart deployment/doc-billing-deployment -n doc-billing 
+    environment:
+      KUBE_CONFIG:
+        from_secret: KUBE_CONFIG
+    depends_on: [docker]
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
