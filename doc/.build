@@ -1,4 +1,4 @@
-dist/search_items-0b63b582cd.js
+dist/search_items-cbab387b01.js
 dist/app-a225d03098e64fef431a.js
 dist/elixir-0ab8a6a80ebaaa287431.css
 dist/erlang-bd206729da4d0d280293.css
@@ -6,15 +6,15 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/sidebar_items-0d03d14c60.js
+dist/sidebar_items-a65c98e47b.js
 api-reference.html
 search.html
 404.html
 MsprBillingApi.html
 MsprBillingApi.Billing.Product.html
 MsprBillingApi.Billing.Vat.html
-MsprBillingApi.Repo.html
 MsprBillingApiWeb.html
+MsprBillingApiWeb.Endpoint.html
 MsprBillingApiWeb.ErrorHelpers.html
 MsprBillingApiWeb.ErrorView.html
 MsprBillingApiWeb.Gettext.html
