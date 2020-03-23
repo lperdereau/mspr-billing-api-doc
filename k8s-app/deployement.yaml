@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: doc-billing-deployment
-  namespace: doc-billing
+  namespace: prod-mspr-ci
 spec:
   selector:
     matchLabels:

@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: doc-billing-ingress
-  namespace: doc-billing
+  namespace: prod-mspr-ci
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -10,13 +10,13 @@ metadata:
 spec:
   tls:
   - hosts:
-    - elixir.k8s.louisperdereau.fr
+    - billing.louisperdereau.fr
     secretName: hello-app-tls
   rules:
-  - host: elixir.k8s.louisperdereau.fr
+  - host: billing.louisperdereau.fr
     http:
       paths:
-      - path: /
+      - path: /doc
         backend:
           serviceName: doc-billing-service
           servicePort: 80

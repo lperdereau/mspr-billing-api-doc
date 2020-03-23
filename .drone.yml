@@ -22,7 +22,7 @@ steps:
     image: pabloclsn/kubectl-docker:latest
     commands:
       - echo $KUBE_CONFIG > ~/.kube/config
-      - kubectl rollout restart deployment/doc-billing-deployment -n doc-billing 
+      - kubectl rollout restart deployment/doc-billing-deployment -n prod-mspr-ci
     environment:
       KUBE_CONFIG:
         from_secret: KUBE_CONFIG
