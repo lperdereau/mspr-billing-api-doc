@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.21.3">
-    <meta name="project" content="Billing API v0.1.0">
-    <title>MsprBillingApi.Billing.Vat — Billing API v0.1.0</title>
+    <meta name="project" content="Billing API v0.2.4">
+    <title>MsprBillingApi.Billing.Vat — Billing API v0.2.4</title>
     <link rel="stylesheet" href="dist/elixir-0ab8a6a80ebaaa287431.css" />
     <script src="dist/sidebar_items-6d9577049c.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="api-reference.html" class="sidebar-projectName">
 Billing API      </a>
       <h2 class="sidebar-projectVersion">
-        v0.1.0
+        v0.2.4
       </h2>
     </div>
   </div>
@@ -64,7 +64,7 @@ Billing API      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Billing API v0.1.0</small>
+        <small class="app-vsn">Billing API v0.2.4</small>
 MsprBillingApi.Billing.Vat      </h1>
 
 
@@ -141,7 +141,7 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="nc">Vat</span><span class="o">.</span><span class="n">create_table</span><span class="p" data-group-id="5264722443-1">(</span><span class="p" data-group-id="5264722443-1">)</span></code></pre>
+</span><span class="nc">Vat</span><span class="o">.</span><span class="n">create_table</span><span class="p" data-group-id="9953418581-1">(</span><span class="p" data-group-id="9953418581-1">)</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_vat_by_type/1">
@@ -162,8 +162,8 @@ Functions          </h1>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vat_by_type</span><span class="p" data-group-id="9180260055-1">(</span><span class="n">type</span><span class="p" data-group-id="9180260055-1">)</span><span class="w">
-</span><span class="p" data-group-id="9180260055-2">[</span><span class="p" data-group-id="9180260055-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="9180260055-3">}</span><span class="p" data-group-id="9180260055-2">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vat_by_type</span><span class="p" data-group-id="2726057497-1">(</span><span class="n">type</span><span class="p" data-group-id="2726057497-1">)</span><span class="w">
+</span><span class="p" data-group-id="2726057497-2">[</span><span class="p" data-group-id="2726057497-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="2726057497-3">}</span><span class="p" data-group-id="2726057497-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_vat_info/0">
@@ -194,11 +194,11 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vats</span><span class="p" data-group-id="9246726269-1">(</span><span class="p" data-group-id="9246726269-1">)</span><span class="w">
-</span><span class="p" data-group-id="9246726269-2">[</span><span class="w">
-  </span><span class="p" data-group-id="9246726269-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="9246726269-3">}</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="9246726269-4">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;intermediary&quot;</span><span class="p" data-group-id="9246726269-4">}</span><span class="w">
-</span><span class="p" data-group-id="9246726269-2">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vats</span><span class="p" data-group-id="6521935645-1">(</span><span class="p" data-group-id="6521935645-1">)</span><span class="w">
+</span><span class="p" data-group-id="6521935645-2">[</span><span class="w">
+  </span><span class="p" data-group-id="6521935645-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="6521935645-3">}</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="6521935645-4">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;intermediary&quot;</span><span class="p" data-group-id="6521935645-4">}</span><span class="w">
+</span><span class="p" data-group-id="6521935645-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="insert_vat/0">
@@ -218,7 +218,7 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="nc">Vat</span><span class="o">.</span><span class="n">insert_vat</span><span class="p" data-group-id="7696262795-1">(</span><span class="p" data-group-id="7696262795-1">)</span></code></pre>
+</span><span class="nc">Vat</span><span class="o">.</span><span class="n">insert_vat</span><span class="p" data-group-id="6697668856-1">(</span><span class="p" data-group-id="6697668856-1">)</span></code></pre>
   </section>
 </section>
           </div>
