@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.21.3">
-    <meta name="project" content="Billing API v0.0.1">
-    <title>MsprBillingApiWeb.JsonHelpers — Billing API v0.0.1</title>
+    <meta name="project" content="Billing API v0.2.2">
+    <title>MsprBillingApiWeb.Router — Billing API v0.2.2</title>
     <link rel="stylesheet" href="dist/elixir-0ab8a6a80ebaaa287431.css" />
-    <script src="dist/sidebar_items-ec7abb7064.js"></script>
+    <script src="dist/sidebar_items-6d9577049c.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/app-a225d03098e64fef431a.js"></script>
   </head>
@@ -43,7 +43,7 @@
       <a href="api-reference.html" class="sidebar-projectName">
 Billing API      </a>
       <h2 class="sidebar-projectVersion">
-        v0.0.1
+        v0.2.2
       </h2>
     </div>
   </div>
@@ -53,6 +53,7 @@ Billing API      </a>
 
       <li><a id="modules-list" href="#full-list">Modules</a></li>
 
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -63,13 +64,10 @@ Billing API      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Billing API v0.0.1</small>
-MsprBillingApiWeb.JsonHelpers      </h1>
+        <small class="app-vsn">Billing API v0.2.2</small>
+MsprBillingApiWeb.Router      </h1>
 
 
-        <section id="moduledoc">
-<p>Provides json-related functions.</p>
-        </section>
 
         <section id="summary" class="details-list">
           <h1 class="section-heading">
@@ -85,9 +83,26 @@ MsprBillingApiWeb.JsonHelpers      </h1>
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#pretty_json/3">pretty_json(conn, status, data)</a>
+    <a href="#api/2">api(conn, _)</a>
   </div>
-    <div class="summary-synopsis"><p>Allow you to render json data</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#browser/2">browser(conn, _)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#call/2">call(conn, opts)</a>
+  </div>
+    <div class="summary-synopsis"><p>Callback invoked by Plug on every request.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#init/1">init(opts)</a>
+  </div>
+    <div class="summary-synopsis"><p>Callback required by Plug that initializes the router
+for serving web requests.</p></div>
 </div>
   </div>
         </section>
@@ -100,39 +115,51 @@ MsprBillingApiWeb.JsonHelpers      </h1>
             </a>
 Functions          </h1>
           <div class="functions-list">
-<section class="detail" id="pretty_json/3">
+<section class="detail" id="api/2">
   <div class="detail-header">
-    <a href="#pretty_json/3" class="detail-link" title="Link to this function">
+    <a href="#api/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">pretty_json(conn, status, data)</h1>
-      <span class="note">(since v0.0.1)</span>
+    <h1 class="signature">api(conn, _)</h1>
   </div>
   <section class="docstring">
-<p>Allow you to render json data</p>
-<h2 id="pretty_json/3-parameters" class="section-heading">
-  <a href="#pretty_json/3-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  Parameters
-</h2>
-
-<ul>
-<li>conn: Plug.Conn that represents the connection to anwser the client.
-</li>
-<li>status: Integer that represents the HTTP status code return to the client.
-</li>
-<li>data: Map return to the client
-</li>
-</ul>
-<h2 id="pretty_json/3-exemples" class="section-heading">
-  <a href="#pretty_json/3-exemples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  Exemples
-</h2>
-
-<pre><code class="nohighlight makeup elixir"><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApiWeb.JsonHelpers</span><span class="w">
-</span><span class="kd">def</span><span class="w"> </span><span class="nf">show</span><span class="p" data-group-id="1227419527-1">(</span><span class="n">conn</span><span class="p" data-group-id="1227419527-1">)</span><span class="w"> </span><span class="k" data-group-id="1227419527-2">do</span><span class="w">
-  </span><span class="nc">JsonHelpers</span><span class="o">.</span><span class="n">pretty_json</span><span class="p" data-group-id="1227419527-3">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1227419527-4">%{</span><span class="ss">msg</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p" data-group-id="1227419527-4">}</span><span class="p" data-group-id="1227419527-3">)</span><span class="w">
-</span><span class="k" data-group-id="1227419527-2">end</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="browser/2">
+  <div class="detail-header">
+    <a href="#browser/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">browser(conn, _)</h1>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="call/2">
+  <div class="detail-header">
+    <a href="#call/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">call(conn, opts)</h1>
+  </div>
+  <section class="docstring">
+<p>Callback invoked by Plug on every request.</p>
+  </section>
+</section>
+<section class="detail" id="init/1">
+  <div class="detail-header">
+    <a href="#init/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">init(opts)</h1>
+  </div>
+  <section class="docstring">
+<p>Callback required by Plug that initializes the router
+for serving web requests.</p>
   </section>
 </section>
           </div>
