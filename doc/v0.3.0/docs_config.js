@@ -7,4 +7,5 @@ var versionNodes = [
 {version: "v0.2.3", url: "https://billing.louisperdereau.fr/doc/v0.2.3/"},
 {version: "v0.2.4", url: "https://billing.louisperdereau.fr/doc/v0.2.4/"},
 {version: "v0.3.0", url: "https://billing.louisperdereau.fr/doc/v0.3.0/"},
+{version: "v0.4.0", url: "https://billing.louisperdereau.fr/doc/v0.4.0/"},
 ]

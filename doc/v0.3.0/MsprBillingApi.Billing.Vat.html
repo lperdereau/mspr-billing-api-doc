@@ -141,7 +141,7 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="nc">Vat</span><span class="o">.</span><span class="n">create_table</span><span class="p" data-group-id="6573880941-1">(</span><span class="p" data-group-id="6573880941-1">)</span></code></pre>
+</span><span class="nc">Vat</span><span class="o">.</span><span class="n">create_table</span><span class="p" data-group-id="9879331600-1">(</span><span class="p" data-group-id="9879331600-1">)</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_vat_by_type/1">
@@ -162,8 +162,8 @@ Functions          </h1>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vat_by_type</span><span class="p" data-group-id="5047330736-1">(</span><span class="n">type</span><span class="p" data-group-id="5047330736-1">)</span><span class="w">
-</span><span class="p" data-group-id="5047330736-2">[</span><span class="p" data-group-id="5047330736-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="5047330736-3">}</span><span class="p" data-group-id="5047330736-2">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vat_by_type</span><span class="p" data-group-id="3369574951-1">(</span><span class="n">type</span><span class="p" data-group-id="3369574951-1">)</span><span class="w">
+</span><span class="p" data-group-id="3369574951-2">[</span><span class="p" data-group-id="3369574951-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="3369574951-3">}</span><span class="p" data-group-id="3369574951-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_vat_info/0">
@@ -194,11 +194,11 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vats</span><span class="p" data-group-id="9978807296-1">(</span><span class="p" data-group-id="9978807296-1">)</span><span class="w">
-</span><span class="p" data-group-id="9978807296-2">[</span><span class="w">
-  </span><span class="p" data-group-id="9978807296-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="9978807296-3">}</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="9978807296-4">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;intermediary&quot;</span><span class="p" data-group-id="9978807296-4">}</span><span class="w">
-</span><span class="p" data-group-id="9978807296-2">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Vat</span><span class="o">.</span><span class="n">get_vats</span><span class="p" data-group-id="8785324427-1">(</span><span class="p" data-group-id="8785324427-1">)</span><span class="w">
+</span><span class="p" data-group-id="8785324427-2">[</span><span class="w">
+  </span><span class="p" data-group-id="8785324427-3">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p" data-group-id="8785324427-3">}</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="8785324427-4">%{</span><span class="ss">percent</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;intermediary&quot;</span><span class="p" data-group-id="8785324427-4">}</span><span class="w">
+</span><span class="p" data-group-id="8785324427-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="insert_vat/0">
@@ -218,7 +218,7 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="kn">alias</span><span class="w"> </span><span class="nc">MsprBillingApi.Billing.Vat</span><span class="w">
-</span><span class="nc">Vat</span><span class="o">.</span><span class="n">insert_vat</span><span class="p" data-group-id="9245997685-1">(</span><span class="p" data-group-id="9245997685-1">)</span></code></pre>
+</span><span class="nc">Vat</span><span class="o">.</span><span class="n">insert_vat</span><span class="p" data-group-id="9892884822-1">(</span><span class="p" data-group-id="9892884822-1">)</span></code></pre>
   </section>
 </section>
           </div>
