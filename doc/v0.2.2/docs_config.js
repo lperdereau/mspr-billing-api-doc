@@ -11,4 +11,5 @@ var versionNodes = [
 {version: "v0.4.1", url: "https://billing.louisperdereau.fr/doc/v0.4.1/"},
 {version: "v0.4.2", url: "https://billing.louisperdereau.fr/doc/v0.4.2/"},
 {version: "v0.4.3", url: "https://billing.louisperdereau.fr/doc/v0.4.3/"},
+{version: "v0.5.0", url: "https://billing.louisperdereau.fr/doc/v0.5.0/"},
 ]
